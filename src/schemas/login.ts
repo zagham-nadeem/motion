@@ -4,7 +4,7 @@ export const loginSchema = z.object({
   name: z
     .string()
     .min(3, "3 letter add kro")
-    .max(10, "10 letter se zyada nhi hoga"),
+    .max(10, "Enter maximum 20 letters"),
   email: z.string().email("Invalid email address"),
   password: z
     .string()
